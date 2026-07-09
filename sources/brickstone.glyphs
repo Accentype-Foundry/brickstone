@@ -82153,7 +82153,7 @@ name = ExtraBold;
 properties = (
 {
 key = postscriptFontName;
-value = "Brickstone-Regular";
+value = "Brickstone-ExtraBold";
 },
 {
 key = postscriptFullNames;

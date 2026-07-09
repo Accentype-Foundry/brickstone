@@ -668,6 +668,7 @@ Location = 100;
 );
 },
 {
+disabled = 1;
 name = underlineThickness;
 value = 30;
 }
@@ -721,14 +722,9 @@ pos = 712;
 );
 name = Thin;
 stemValues = (
-38,
-40,
-45,
-34,
-30,
-40,
-138,
-142
+41,
+32,
+40
 );
 userData = {
 GSOffsetHorizontal = -10;
@@ -804,6 +800,7 @@ Location = 400;
 );
 },
 {
+disabled = 1;
 name = underlineThickness;
 value = 74;
 }
@@ -857,14 +854,9 @@ pos = 695;
 );
 name = Regular;
 stemValues = (
-88,
-90,
-90,
-80,
-67,
-76,
-87,
-89
+89,
+74,
+76
 );
 userData = {
 GSExtrudeAngle = 30;
@@ -947,6 +939,7 @@ Location = 800;
 );
 },
 {
+disabled = 1;
 name = underlineThickness;
 value = 150;
 }
@@ -1000,14 +993,9 @@ pos = 731;
 );
 name = ExtraBold;
 stemValues = (
-200,
 210,
-221,
-140,
-130,
-160,
-150,
-165
+135,
+160
 );
 userData = {
 GSOffsetHorizontal = -54;
@@ -81720,7 +81708,6 @@ axesValues = (
 );
 customParameters = (
 {
-disabled = 1;
 name = "Style Name as STAT entry";
 value = wght;
 },
@@ -81779,7 +81766,6 @@ axesValues = (
 );
 customParameters = (
 {
-disabled = 1;
 name = "Style Name as STAT entry";
 value = wght;
 },
@@ -81838,7 +81824,6 @@ axesValues = (
 );
 customParameters = (
 {
-disabled = 1;
 name = "Style Name as STAT entry";
 value = wght;
 },
@@ -81897,7 +81882,6 @@ axesValues = (
 );
 customParameters = (
 {
-disabled = 1;
 name = "Style Name as STAT entry";
 value = wght;
 },
@@ -81955,7 +81939,6 @@ axesValues = (
 );
 customParameters = (
 {
-disabled = 1;
 name = "Style Name as STAT entry";
 value = wght;
 },
@@ -82014,7 +81997,6 @@ axesValues = (
 );
 customParameters = (
 {
-disabled = 1;
 name = "Style Name as STAT entry";
 value = wght;
 },
@@ -82073,7 +82055,6 @@ axesValues = (
 );
 customParameters = (
 {
-disabled = 1;
 name = "Style Name as STAT entry";
 value = wght;
 },
@@ -82142,7 +82123,6 @@ axesValues = (
 );
 customParameters = (
 {
-disabled = 1;
 name = "Style Name as STAT entry";
 value = wght;
 },
@@ -83679,33 +83659,14 @@ previewRemoveOverlap = 0;
 };
 stems = (
 {
-name = vStem_straight;
-},
-{
-name = vStem_capital;
-},
-{
-name = vStem_round;
+name = "vStem ";
 },
 {
 horizontal = 1;
-name = hStem_capbar;
+name = hStem;
 },
 {
-horizontal = 1;
-name = hStem_crossbar;
-},
-{
-horizontal = 1;
-name = hStem_round;
-},
-{
-horizontal = 1;
-name = hStem_capflat;
-},
-{
-horizontal = 1;
-name = hStem_zflat;
+name = "hStem_round ";
 }
 );
 unitsPerEm = 1000;

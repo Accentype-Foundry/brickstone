@@ -1,0 +1,328 @@
+# buildVariable: Build a variable font from a source file
+rule buildVariable
+  command = /Library/Frameworks/Python.framework/Versions/3.14/bin/python3 $
+      -m gftools.builder.jobrunner fontmake --output-path $out -o variable $
+      $fontmake_type $in $args $stamp
+  description = buildVariable
+
+# fix: Run gftools-fix
+rule fix
+  command = /Library/Frameworks/Python.framework/Versions/3.14/bin/python3 $
+      -m gftools.builder.jobrunner gftools-fix-font -o $out $args $in $stamp
+  description = fix
+
+# buildStat: Build a STAT table from one or more source files
+rule buildSTAT-operation
+  command = gftools-gen-stat --out $tempdir $args -- $in && mv $finalfile $
+      $out $stamp
+rule buildSTAT-postprocess
+  command = gftools-gen-stat --inplace $args -- $in $stamp
+
+# compress: Compress to webfont
+rule compress
+  command = /Library/Frameworks/Python.framework/Versions/3.14/bin/python3 $
+      -m gftools.builder.jobrunner fonttools ttLib.woff2 compress -o $out $
+      $in $stamp
+  description = compress
+
+# instantiateUfo: Create instance UFOs from a Glyphs or designspace file
+rule instantiateUfo
+  command = /Library/Frameworks/Python.framework/Versions/3.14/bin/python3 $
+      -m gftools.builder.jobrunner fontmake -i "$instance_name" -o ufo $
+      $fontmake_type $in $args $stamp
+  description = instantiateUfo
+
+# buildTTF: Build a TTF from a source file
+rule buildTTF
+  command = /Library/Frameworks/Python.framework/Versions/3.14/bin/python3 $
+      -m gftools.builder.jobrunner fontmake --output-path $out -o ttf $
+      $fontmake_type $in $args $stamp
+  description = buildTTF
+
+# autohint: Run gftools-autohint
+rule autohint
+  command = /Library/Frameworks/Python.framework/Versions/3.14/bin/python3 $
+      -m gftools.builder.jobrunner gftools-autohint $args -o $out $in $stamp
+  description = autohint
+
+# copy: Copy a file
+rule copy
+  command = /Library/Frameworks/Python.framework/Versions/3.14/bin/python3 $
+      -m gftools.builder.jobrunner cp $in $out $stamp
+  description = copy
+
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpi__b42jd
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpi__b42jd: $
+    buildVariable Brickstone.glyphs
+  operation = buildVariable
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+# Generating instance_ufos/Brickstone-Thin.ufo.json
+build instance_ufos/Brickstone-Thin.ufo.json: instantiateUfo Brickstone.glyphs
+  operation = instantiateUfo
+  instance_name = Brickstone Thin
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Brickstone-ExtraLight.ufo.json
+build instance_ufos/Brickstone-ExtraLight.ufo.json: instantiateUfo $
+    Brickstone.glyphs
+  operation = instantiateUfo
+  instance_name = Brickstone ExtraLight
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Brickstone-Light.ufo.json
+build instance_ufos/Brickstone-Light.ufo.json: instantiateUfo $
+    Brickstone.glyphs
+  operation = instantiateUfo
+  instance_name = Brickstone Light
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Brickstone-Regular.ufo.json
+build instance_ufos/Brickstone-Regular.ufo.json: instantiateUfo $
+    Brickstone.glyphs
+  operation = instantiateUfo
+  instance_name = Brickstone Regular
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Brickstone-Medium.ufo.json
+build instance_ufos/Brickstone-Medium.ufo.json: instantiateUfo $
+    Brickstone.glyphs
+  operation = instantiateUfo
+  instance_name = Brickstone Medium
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Brickstone-SemiBold.ufo.json
+build instance_ufos/Brickstone-SemiBold.ufo.json: instantiateUfo $
+    Brickstone.glyphs
+  operation = instantiateUfo
+  instance_name = Brickstone SemiBold
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Brickstone-Bold.ufo.json
+build instance_ufos/Brickstone-Bold.ufo.json: instantiateUfo Brickstone.glyphs
+  operation = instantiateUfo
+  instance_name = Brickstone Bold
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Generating instance_ufos/Brickstone-ExtraBold.ufo.json
+build instance_ufos/Brickstone-ExtraBold.ufo.json: instantiateUfo $
+    Brickstone.glyphs
+  operation = instantiateUfo
+  instance_name = Brickstone ExtraBold
+  fontmake_type = -g
+  fontmake_args =  --verbose WARNING 
+  args =  --ufo-structure=json --instance-dir instance_ufos
+# Postprocessing  with BuildSTAT
+build $
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpebzlknta.buildStatstamp: $
+    buildSTAT-postprocess ../fonts/variable/Brickstone[wght].ttf | $
+    ../fonts/variable/Brickstone[wght].ttf
+  stamp =  && touch $
+      /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpebzlknta.buildStatstamp
+  postprocess = buildStat
+  args = --src /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpn1fu2mk8
+# Generating ../fonts/webfonts/Brickstone[wght].woff2
+build ../fonts/webfonts/Brickstone[wght].woff2: compress $
+    ../fonts/variable/Brickstone[wght].ttf
+  operation = compress
+# Generating ../fonts/webfonts/Brickstone-Thin.woff2
+build ../fonts/webfonts/Brickstone-Thin.woff2: compress $
+    ../fonts/ttf/Brickstone-Thin.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Brickstone-ExtraLight.woff2
+build ../fonts/webfonts/Brickstone-ExtraLight.woff2: compress $
+    ../fonts/ttf/Brickstone-ExtraLight.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Brickstone-Light.woff2
+build ../fonts/webfonts/Brickstone-Light.woff2: compress $
+    ../fonts/ttf/Brickstone-Light.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Brickstone-Regular.woff2
+build ../fonts/webfonts/Brickstone-Regular.woff2: compress $
+    ../fonts/ttf/Brickstone-Regular.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Brickstone-Medium.woff2
+build ../fonts/webfonts/Brickstone-Medium.woff2: compress $
+    ../fonts/ttf/Brickstone-Medium.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Brickstone-SemiBold.woff2
+build ../fonts/webfonts/Brickstone-SemiBold.woff2: compress $
+    ../fonts/ttf/Brickstone-SemiBold.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Brickstone-Bold.woff2
+build ../fonts/webfonts/Brickstone-Bold.woff2: compress $
+    ../fonts/ttf/Brickstone-Bold.ttf
+  operation = compress
+# Generating ../fonts/webfonts/Brickstone-ExtraBold.woff2
+build ../fonts/webfonts/Brickstone-ExtraBold.woff2: compress $
+    ../fonts/ttf/Brickstone-ExtraBold.ttf
+  operation = compress
+# Generating ../fonts/variable/Brickstone[wght].ttf
+build ../fonts/variable/Brickstone[wght].ttf: fix $
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpi__b42jd
+  operation = fix
+  args =  --include-source-fixes
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpvjcv92cd
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpvjcv92cd: $
+    buildTTF instance_ufos/Brickstone-Thin.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp9eei37_a
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp9eei37_a: $
+    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpvjcv92cd
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Brickstone-Thin.ttf
+build ../fonts/ttf/Brickstone-Thin.ttf: fix $
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp9eei37_a
+  operation = fix
+  args =  --include-source-fixes
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpvjrm71oq
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpvjrm71oq: $
+    buildTTF instance_ufos/Brickstone-ExtraLight.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpm4w_ckr4
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpm4w_ckr4: $
+    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpvjrm71oq
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Brickstone-ExtraLight.ttf
+build ../fonts/ttf/Brickstone-ExtraLight.ttf: fix $
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpm4w_ckr4
+  operation = fix
+  args =  --include-source-fixes
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp03hp5_oc
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp03hp5_oc: $
+    buildTTF instance_ufos/Brickstone-Light.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpliw_92yj
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpliw_92yj: $
+    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp03hp5_oc
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Brickstone-Light.ttf
+build ../fonts/ttf/Brickstone-Light.ttf: fix $
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpliw_92yj
+  operation = fix
+  args =  --include-source-fixes
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpisgwbg_3
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpisgwbg_3: $
+    buildTTF instance_ufos/Brickstone-Regular.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpvb6rgggw
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpvb6rgggw: $
+    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpisgwbg_3
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Brickstone-Regular.ttf
+build ../fonts/ttf/Brickstone-Regular.ttf: fix $
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpvb6rgggw
+  operation = fix
+  args =  --include-source-fixes
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpjlmb9cc1
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpjlmb9cc1: $
+    buildTTF instance_ufos/Brickstone-Medium.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpifsbuk77
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpifsbuk77: $
+    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpjlmb9cc1
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Brickstone-Medium.ttf
+build ../fonts/ttf/Brickstone-Medium.ttf: fix $
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpifsbuk77
+  operation = fix
+  args =  --include-source-fixes
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp865wlm7v
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp865wlm7v: $
+    buildTTF instance_ufos/Brickstone-SemiBold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpv00hkrbb
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpv00hkrbb: $
+    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp865wlm7v
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Brickstone-SemiBold.ttf
+build ../fonts/ttf/Brickstone-SemiBold.ttf: fix $
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpv00hkrbb
+  operation = fix
+  args =  --include-source-fixes
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp1wp5n6mt
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp1wp5n6mt: $
+    buildTTF instance_ufos/Brickstone-Bold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpxglalp1d
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpxglalp1d: $
+    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp1wp5n6mt
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Brickstone-Bold.ttf
+build ../fonts/ttf/Brickstone-Bold.ttf: fix $
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpxglalp1d
+  operation = fix
+  args =  --include-source-fixes
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp1zvdd4ow
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp1zvdd4ow: $
+    buildTTF instance_ufos/Brickstone-ExtraBold.ufo.json
+  operation = buildTTF
+  args = --filter ...  --filter FlattenComponentsFilter --filter $
+      DecomposeTransformedComponentsFilter
+  fontmake_type = -u
+  fontmake_args =  --verbose WARNING 
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpr17z2uky
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpr17z2uky: $
+    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp1zvdd4ow
+  operation = autohint
+  args = --fail-ok 
+# Generating ../fonts/ttf/Brickstone-ExtraBold.ttf
+build ../fonts/ttf/Brickstone-ExtraBold.ttf: fix $
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpr17z2uky
+  operation = fix
+  args =  --include-source-fixes
+default $
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpebzlknta.buildStatstamp $
+    ../fonts/webfonts/Brickstone[wght].woff2 $
+    ../fonts/webfonts/Brickstone-Thin.woff2 $
+    ../fonts/webfonts/Brickstone-ExtraLight.woff2 $
+    ../fonts/webfonts/Brickstone-Light.woff2 $
+    ../fonts/webfonts/Brickstone-Regular.woff2 $
+    ../fonts/webfonts/Brickstone-Medium.woff2 $
+    ../fonts/webfonts/Brickstone-SemiBold.woff2 $
+    ../fonts/webfonts/Brickstone-Bold.woff2 $
+    ../fonts/webfonts/Brickstone-ExtraBold.woff2

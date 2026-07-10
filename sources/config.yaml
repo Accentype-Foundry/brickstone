@@ -34,6 +34,7 @@ ttfaUseScript: false
 # 5. AUTOMATED FIXES (Google Fonts Fixes)
 # ==========================================
 includeSourceFixes: true
+
 # ==========================================
 # 6. FONTMAKE OUTLINE AND COMPONENT SETTINGS
 # ==========================================
@@ -44,6 +45,7 @@ checkCompatibility: true
 expandFeaturesToInstances: false
 reverseOutlineDirection: true
 removeOutlineOverlaps: true
+extraFontmakeArgs: "--filter 'DottedCircleFilter(pre=True)'"
 
 # ==========================================
 # 7. STAT TABLE DEFINITION

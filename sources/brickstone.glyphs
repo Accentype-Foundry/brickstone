@@ -83612,8 +83612,8 @@ properties = (
 key = copyrights;
 values = (
 {
-language = FRA;
-value = "© miklós ferencz 2018-2025. All rights reserved.";
+language = dflt;
+value = "Copyright 2018-2026 The Brickstone Project Authors (https://github.com/Accentype-Foundry/brickstone)";
 }
 );
 },
@@ -83621,7 +83621,7 @@ value = "© miklós ferencz 2018-2025. All rights reserved.";
 key = designers;
 values = (
 {
-language = FRA;
+language = dflt;
 value = "Miklós Ferencz";
 }
 );
@@ -83634,7 +83634,7 @@ value = "https://accentype.xyz";
 key = licenses;
 values = (
 {
-language = FRA;
+language = dflt;
 value = "Custom license - see https://accentype.xyz/font-licenses";
 }
 );
@@ -83644,6 +83644,19 @@ key = licenseURL;
 value = "https://accentype.xyz/font-licenses";
 },
 {
+key = manufacturers;
+values = (
+{
+language = dflt;
+value = "Accentype Foundry";
+}
+);
+},
+{
+key = manufacturerURL;
+value = "https://accentype.xyz";
+},
+{
 key = postscriptFontName;
 value = Brickstone;
 },
@@ -83651,7 +83664,7 @@ value = Brickstone;
 key = trademarks;
 values = (
 {
-language = FRA;
+language = dflt;
 value = "Brickstone is a trademark of [Miklós Ferencz - Accentype]";
 }
 );

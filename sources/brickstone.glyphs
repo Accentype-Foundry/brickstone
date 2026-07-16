@@ -24,7 +24,7 @@ tag = wght;
 );
 classes = (
 {
-code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z zero one two three four five six seven eight nine period comma hyphen space CR \\NULL colon semicolon ellipsis exclam exclamdown question questiondown periodcentered bullet asterisk numbersign slash backslash underscore quotedbl quotesingle asciicircum Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE Cacute Ccaron Ccedilla Ccircumflex Cdotaccent Dcaron Dcroat Eth Eacute Ebreve Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek Schwa Gbreve Gcircumflex Gcommaaccent Gdotaccent Hbar Hcircumflex IJ Iacute Ibreve Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek Itilde Jacute Jcircumflex Kcommaaccent Lacute Lcaron Lcommaaccent Ldot Lslash Nacute Ncaron Ncommaaccent Ntilde Eng Oacute Obreve Ocircumflex Odieresis Ograve Ohorn Ohungarumlaut Omacron Oslash Otilde OE Thorn Racute Rcaron Rcommaaccent Sacute Scaron Scedilla Scircumflex Scommaaccent Germandbls Tbar Tcaron Tcedilla Tcommaaccent Uacute Ubreve Ucircumflex Udieresis Ugrave Uhorn Uhungarumlaut Umacron Uogonek Uring Utilde Wacute Wcircumflex Wdieresis Wgrave Yacute Ycircumflex Ydieresis Ygrave Zacute Zcaron Zdotaccent aacute abreve acircumflex adieresis agrave amacron aogonek aring atilde ae cacute ccaron ccedilla ccircumflex cdotaccent dcaron dcroat eth eacute ebreve ecaron ecircumflex edieresis edotaccent egrave emacron eogonek schwa gbreve gcircumflex gcommaaccent gdotaccent hbar hcircumflex idotless iacute ibreve icircumflex idieresis idotaccent igrave imacron iogonek itilde ij jdotless jacute jcircumflex kcommaaccent lacute lcaron lcommaaccent ldot lslash nacute ncaron ncommaaccent ntilde eng oacute obreve ocircumflex odieresis ograve ohorn ohungarumlaut omacron oslash otilde oe thorn racute rcaron rcommaaccent sacute scaron scedilla scircumflex scommaaccent germandbls tbar tcaron tcedilla tcommaaccent uacute ubreve ucircumflex udieresis ugrave uhorn uhungarumlaut umacron uogonek uring utilde wacute wcircumflex wdieresis wgrave yacute ycircumflex ydieresis ygrave zacute zcaron zdotaccent f_f f_f_i f_f_l f_i f_j f_l fl ordfeminine ordmasculine Alpha alpha pi zero.lf one.lf two.lf three.lf four.lf five.lf six.lf seven.lf eight.lf nine.lf zero.osf one.osf two.osf three.osf four.osf five.osf six.osf seven.osf eight.osf nine.osf zero.tf one.tf two.tf three.tf four.tf five.tf six.tf seven.tf eight.tf nine.tf zero.tosf one.tosf two.tosf three.tosf four.tosf five.tosf six.tosf seven.tosf eight.tosf nine.tosf zero.dnom one.dnom two.dnom three.dnom four.dnom five.dnom six.dnom seven.dnom eight.dnom nine.dnom zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr fraction onefraction onehalf zerothird onethird twothirds onequarter threequarters onefifth twofifths threefifths fourfifths onesixth fivesixths oneseventh oneeighth threeeighths fiveeighths seveneighths oneninth onetenth zeroinferior oneinferior twoinferior threeinferior fourinferior fiveinferior sixinferior seveninferior eightinferior nineinferior zerosuperior onesuperior twosuperior threesuperior foursuperior fivesuperior sixsuperior sevensuperior eightsuperior ninesuperior nbspace comma-han period-han dittomark ampersand.full asterisk.full at.full backslash.full colon.full comma.full exclam.full periodcentered.loclCAT numbersign.full percent.full period.full question.full quotedbl.full quotesingle.full semicolon.full slash.full underscore.full periodcentered.loclCAT.case endash emdash wavedash hyphen.full parenleft parenright braceleft braceright bracketleft bracketright braceleft.full braceright.full bracketleft.full bracketright.full parenleft.full parenright.full quotesinglbase quotedblbase quotedblleft quotedblright quoteleft quoteright guillemetleft guillemetright guilsinglleft guilsinglright baht at ampersand paragraph section copyright registered trademark degree bar brokenbar dagger daggerdbl cent currency dollar euro hryvnia ruble rupeeIndian sheqel sterling won yen plus minus multiply divide equal notequal greater less greaterequal lessequal plusminus approxequal asciitilde logicalnot infinity integral product summation radical micro partialdiff percent perthousand upArrow northEastArrow rightArrow southEastArrow downArrow southWestArrow leftArrow northWestArrow leftRightArrow upDownArrow dottedCircle lozenge dieresiscomb dotaccentcomb gravecomb acutecomb hungarumlautcomb caroncomb.alt circumflexcomb caroncomb brevecomb ringcomb tildecomb macroncomb commaturnedabovecomb commaaccentcomb cedillacomb ogonekcomb strokeshortcomb strokelongcomb slashshortcomb ogonekcomb.a slashshortcomb.case strokeshortcomb.t ogonekcomb.u dieresis dotaccent grave acute hungarumlaut circumflex caron breve ring tilde macron cedilla ogonek UP-top-Y lc-top
+code = "A B C D E F G H I J K L M N O P Q R S T U V W X Y Z a b c d e f g h i j k l m n o p q r s t u v w x y z zero one two three four five six seven eight nine period comma hyphen space CR \\NULL colon semicolon ellipsis exclam exclamdown question questiondown periodcentered bullet asterisk numbersign slash backslash underscore quotedbl quotesingle asciicircum Aacute Abreve Acircumflex Adieresis Agrave Amacron Aogonek Aring Atilde AE Cacute Ccaron Ccedilla Ccircumflex Cdotaccent Dcaron Dcroat Eth Eacute Ebreve Ecaron Ecircumflex Edieresis Edotaccent Egrave Emacron Eogonek Schwa Gbreve Gcircumflex Gcommaaccent Gdotaccent Hbar Hcircumflex IJ Iacute Ibreve Icircumflex Idieresis Idotaccent Igrave Imacron Iogonek Itilde Jacute Jcircumflex Kcommaaccent Lacute Lcaron Lcommaaccent Ldot Lslash Nacute Ncaron Ncommaaccent Ntilde Eng Oacute Obreve Ocircumflex Odieresis Ograve Ohorn Ohungarumlaut Omacron Oslash Otilde OE Thorn Racute Rcaron Rcommaaccent Sacute Scaron Scedilla Scircumflex Scommaaccent Germandbls Tbar Tcaron Tcedilla Tcommaaccent Uacute Ubreve Ucircumflex Udieresis Ugrave Uhorn Uhungarumlaut Umacron Uogonek Uring Utilde Wacute Wcircumflex Wdieresis Wgrave Yacute Ycircumflex Ydieresis Ygrave Zacute Zcaron Zdotaccent Iacute_Jacute aacute abreve acircumflex adieresis agrave amacron aogonek aring atilde ae cacute ccaron ccedilla ccircumflex cdotaccent dcaron dcroat eth eacute ebreve ecaron ecircumflex edieresis edotaccent egrave emacron eogonek schwa gbreve gcircumflex gcommaaccent gdotaccent hbar hcircumflex idotless iacute ibreve icircumflex idieresis idotaccent igrave imacron iogonek itilde ij jdotless jacute jcircumflex kcommaaccent lacute lcaron lcommaaccent ldot lslash nacute ncaron ncommaaccent ntilde eng oacute obreve ocircumflex odieresis ograve ohorn ohungarumlaut omacron oslash otilde oe thorn racute rcaron rcommaaccent sacute scaron scedilla scircumflex scommaaccent germandbls tbar tcaron tcedilla tcommaaccent uacute ubreve ucircumflex udieresis ugrave uhorn uhungarumlaut umacron uogonek uring utilde wacute wcircumflex wdieresis wgrave yacute ycircumflex ydieresis ygrave zacute zcaron zdotaccent f_f f_f_i f_f_ij f_f_l f_i f_ij f_j f_l fi fl iacute_jacute ordfeminine ordmasculine Alpha Omega alpha pi zero.zero zero.lf one.lf two.lf three.lf four.lf five.lf six.lf seven.lf eight.lf nine.lf zero.osf one.osf two.osf three.osf four.osf five.osf six.osf seven.osf eight.osf nine.osf zero.tf one.tf two.tf three.tf four.tf five.tf six.tf seven.tf eight.tf nine.tf zero.tosf one.tosf two.tosf three.tosf four.tosf five.tosf six.tosf seven.tosf eight.tosf nine.tosf zero.dnom one.dnom two.dnom three.dnom four.dnom five.dnom six.dnom seven.dnom eight.dnom nine.dnom zero.numr one.numr two.numr three.numr four.numr five.numr six.numr seven.numr eight.numr nine.numr fraction onefraction onehalf zerothird onethird twothirds onequarter threequarters onefifth twofifths threefifths fourfifths onesixth fivesixths oneseventh oneeighth threeeighths fiveeighths seveneighths oneninth onetenth zeroinferior oneinferior twoinferior threeinferior fourinferior fiveinferior sixinferior seveninferior eightinferior nineinferior zerosuperior onesuperior twosuperior threesuperior foursuperior fivesuperior sixsuperior sevensuperior eightsuperior ninesuperior nbspace comma-han period-han leftanglebracket-math rightanglebracket-math dblverticalbar dittomark ampersand.full asterisk.full at.full backslash.full colon.full comma.full exclam.full periodcentered.loclCAT numbersign.full percent.full period.full question.full quotedbl.full quotesingle.full semicolon.full slash.full underscore.full periodcentered.loclCAT.case endash emdash wavedash hyphen.full parenleft parenright braceleft braceright bracketleft bracketright braceleft.full braceright.full bracketleft.full bracketright.full parenleft.full parenright.full quotesinglbase quotedblbase quotedblleft quotedblright quoteleft quoteright guillemetleft guillemetright guilsinglleft guilsinglright florin baht at ampersand paragraph section copyright registered trademark degree minute second bar brokenbar dagger literSign daggerdbl estimated numero D.circled bitcoin cedi cent colonsign currency dollar dong euro guarani hryvnia kip lari liraTurkish manat naira peso ruble rupee rupeeIndian sheqel sterling tenge tugrik won yen plus minus multiply divide equal notequal greater less greaterequal lessequal plusminus approxequal asciitilde logicalnot infinity emptyset integral Ohm increment product summation radical micro partialdiff percent perthousand upArrow northEastArrow rightArrow southEastArrow downArrow southWestArrow leftArrow northWestArrow leftRightArrow upDownArrow blackCircle whiteCircle dottedCircle whiteBullet blackDiamond whiteDiamond lozenge blackSquare whiteSquare blackSmallSquare whiteSmallSquare upBlackTriangle rightBlackTriangle downBlackTriangle leftBlackTriangle upWhiteTriangle rightWhiteTriangle downWhiteTriangle leftWhiteTriangle upBlackSmallTriangle rightBlackSmallTriangle downBlackSmallTriangle leftBlackSmallTriangle upWhiteSmallTriangle rightWhiteSmallTriangle downWhiteSmallTriangle leftWhiteSmallTriangle dieresiscomb dotaccentcomb gravecomb acutecomb hungarumlautcomb caroncomb.alt circumflexcomb caroncomb brevecomb ringcomb tildecomb macroncomb commaturnedabovecomb commaaccentcomb cedillacomb ogonekcomb strokeshortcomb strokelongcomb slashshortcomb ogonekcomb.a slashshortcomb.case strokeshortcomb.t ogonekcomb.u dieresis dotaccent grave acute hungarumlaut circumflex caron breve ring tilde macron cedilla ogonek IJacute ijacute
 ";
 name = All;
 },
@@ -17803,7 +17803,7 @@ unicode = 32;
 {
 color = 1;
 glyphname = CR;
-lastChange = "2026-05-06 13:17:42 +0000";
+lastChange = "2026-07-16 13:41:45 +0000";
 layers = (
 {
 layerId = master01;
@@ -17819,10 +17819,11 @@ width = 596;
 }
 );
 note = CR;
+unicode = 13;
 },
 {
 glyphname = NULL;
-lastChange = "2026-05-06 13:17:42 +0000";
+lastChange = "2026-07-16 13:42:41 +0000";
 layers = (
 {
 layerId = "FA803571-32C9-4FEE-972F-1FEF49B82217";
@@ -17837,6 +17838,7 @@ layerId = "494556E7-144A-4E25-B9FC-0C21051BD184";
 width = 596;
 }
 );
+unicode = 0;
 },
 {
 color = 1;
@@ -26697,7 +26699,7 @@ metricRight = J;
 },
 {
 glyphname = Iacute_Jacute;
-lastChange = "2026-05-22 13:32:30 +0000";
+lastChange = "2026-07-16 13:55:48 +0000";
 layers = (
 {
 layerId = "FA803571-32C9-4FEE-972F-1FEF49B82217";
@@ -36858,7 +36860,7 @@ unicode = 64258;
 },
 {
 glyphname = iacute_jacute;
-lastChange = "2026-05-22 13:30:49 +0000";
+lastChange = "2026-07-16 13:55:57 +0000";
 layers = (
 {
 layerId = "FA803571-32C9-4FEE-972F-1FEF49B82217";
@@ -81400,7 +81402,7 @@ unicode = 731;
 },
 {
 glyphname = IJacute;
-lastChange = "2026-07-07 16:28:57 +0000";
+lastChange = "2026-07-16 13:55:50 +0000";
 layers = (
 {
 layerId = "FA803571-32C9-4FEE-972F-1FEF49B82217";
@@ -81430,10 +81432,46 @@ ref = Iacute_Jacute;
 width = 808;
 }
 );
+unicode = 57651;
 },
 {
+glyphname = ijacute;
+lastChange = "2026-07-16 13:55:59 +0000";
+layers = (
+{
+layerId = "FA803571-32C9-4FEE-972F-1FEF49B82217";
+shapes = (
+{
+ref = iacute_jacute;
+}
+);
+width = 497;
+},
+{
+layerId = master01;
+shapes = (
+{
+ref = iacute_jacute;
+}
+);
+width = 522;
+},
+{
+layerId = "494556E7-144A-4E25-B9FC-0C21051BD184";
+shapes = (
+{
+ref = iacute_jacute;
+}
+);
+width = 642;
+}
+);
+unicode = 57650;
+},
+{
+export = 0;
 glyphname = "UP-top-Y";
-lastChange = "2026-05-06 13:17:43 +0000";
+lastChange = "2026-07-16 13:45:34 +0000";
 layers = (
 {
 layerId = "FA803571-32C9-4FEE-972F-1FEF49B82217";
@@ -81497,41 +81535,61 @@ width = 276;
 );
 },
 {
-glyphname = ijacute;
-lastChange = "2026-07-07 16:27:31 +0000";
+export = 0;
+glyphname = _circle;
+lastChange = "2026-04-08 12:53:54 +0000";
 layers = (
 {
 layerId = "FA803571-32C9-4FEE-972F-1FEF49B82217";
 shapes = (
 {
-ref = iacute_jacute;
+closed = 1;
+nodes = (
+(0,0,l),
+(80,0,l),
+(80,34,l),
+(0,34,l)
+);
 }
 );
-width = 497;
+width = 80;
 },
 {
 layerId = master01;
 shapes = (
 {
-ref = iacute_jacute;
+closed = 1;
+nodes = (
+(0,0,l),
+(80,0,l),
+(80,50,l),
+(0,50,l)
+);
 }
 );
-width = 522;
+width = 80;
 },
 {
 layerId = "494556E7-144A-4E25-B9FC-0C21051BD184";
 shapes = (
 {
-ref = iacute_jacute;
+closed = 1;
+nodes = (
+(0,0,l),
+(84,0,l),
+(84,64,l),
+(0,64,l)
+);
 }
 );
-width = 642;
+width = 80;
 }
 );
 },
 {
+export = 0;
 glyphname = "lc-top";
-lastChange = "2026-05-06 13:17:43 +0000";
+lastChange = "2026-07-16 13:45:58 +0000";
 layers = (
 {
 layerId = "FA803571-32C9-4FEE-972F-1FEF49B82217";
@@ -81609,58 +81667,6 @@ nodes = (
 }
 );
 width = 222;
-}
-);
-},
-{
-export = 0;
-glyphname = _circle;
-lastChange = "2026-04-08 12:53:54 +0000";
-layers = (
-{
-layerId = "FA803571-32C9-4FEE-972F-1FEF49B82217";
-shapes = (
-{
-closed = 1;
-nodes = (
-(0,0,l),
-(80,0,l),
-(80,34,l),
-(0,34,l)
-);
-}
-);
-width = 80;
-},
-{
-layerId = master01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(0,0,l),
-(80,0,l),
-(80,50,l),
-(0,50,l)
-);
-}
-);
-width = 80;
-},
-{
-layerId = "494556E7-144A-4E25-B9FC-0C21051BD184";
-shapes = (
-{
-closed = 1;
-nodes = (
-(0,0,l),
-(84,0,l),
-(84,64,l),
-(0,64,l)
-);
-}
-);
-width = 80;
 }
 );
 }
@@ -85628,5 +85634,5 @@ O,
 };
 };
 versionMajor = 1;
-versionMinor = 8;
+versionMinor = 0;
 }

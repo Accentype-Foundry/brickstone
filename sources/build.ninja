@@ -51,8 +51,8 @@ rule copy
       -m gftools.builder.jobrunner cp $in $out $stamp
   description = copy
 
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp6cnalgr_
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp6cnalgr_: $
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpu38jrctg
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpu38jrctg: $
     buildVariable Brickstone.glyphs
   operation = buildVariable
   args = --filter ...  --filter FlattenComponentsFilter --filter $
@@ -124,13 +124,13 @@ build instance_ufos/Brickstone-ExtraBold.ufo.json: instantiateUfo $
   args =  --ufo-structure=json --instance-dir instance_ufos
 # Postprocessing  with BuildSTAT
 build $
-    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpsvvd8c_v.buildStatstamp: $
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpicv7fnhj.buildStatstamp: $
     buildSTAT-postprocess ../fonts/variable/Brickstone[wght].ttf | $
     ../fonts/variable/Brickstone[wght].ttf
   stamp =  && touch $
-      /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpsvvd8c_v.buildStatstamp
+      /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpicv7fnhj.buildStatstamp
   postprocess = buildStat
-  args = --src /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpfl0rbv9t
+  args = --src /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpxn7yuufr
 # Generating ../fonts/webfonts/Brickstone[wght].woff2
 build ../fonts/webfonts/Brickstone[wght].woff2: compress $
     ../fonts/variable/Brickstone[wght].ttf
@@ -169,11 +169,11 @@ build ../fonts/webfonts/Brickstone-ExtraBold.woff2: compress $
   operation = compress
 # Generating ../fonts/variable/Brickstone[wght].ttf
 build ../fonts/variable/Brickstone[wght].ttf: fix $
-    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp6cnalgr_
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpu38jrctg
   operation = fix
   args =  --include-source-fixes
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpokid290s
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpokid290s: $
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmplx7sdb8j
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmplx7sdb8j: $
     buildTTF instance_ufos/Brickstone-Thin.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
@@ -181,18 +181,18 @@ build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpokid290s: $
       'DottedCircleFilter(pre=True)'
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpht87mapi
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpht87mapi: $
-    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpokid290s
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp93ovxk81
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp93ovxk81: $
+    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmplx7sdb8j
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Brickstone-Thin.ttf
 build ../fonts/ttf/Brickstone-Thin.ttf: fix $
-    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpht87mapi
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp93ovxk81
   operation = fix
   args =  --include-source-fixes
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpte_540l2
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpte_540l2: $
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpw_kvdlox
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpw_kvdlox: $
     buildTTF instance_ufos/Brickstone-ExtraLight.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
@@ -200,18 +200,18 @@ build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpte_540l2: $
       'DottedCircleFilter(pre=True)'
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpp5ydc0ax
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpp5ydc0ax: $
-    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpte_540l2
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp3mt5a2b7
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp3mt5a2b7: $
+    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpw_kvdlox
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Brickstone-ExtraLight.ttf
 build ../fonts/ttf/Brickstone-ExtraLight.ttf: fix $
-    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpp5ydc0ax
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp3mt5a2b7
   operation = fix
   args =  --include-source-fixes
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpfbpkxu_x
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpfbpkxu_x: $
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpa3k2sqlf
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpa3k2sqlf: $
     buildTTF instance_ufos/Brickstone-Light.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
@@ -219,18 +219,18 @@ build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpfbpkxu_x: $
       'DottedCircleFilter(pre=True)'
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp4tv8q2p9
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp4tv8q2p9: $
-    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpfbpkxu_x
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpeqi28oi4
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpeqi28oi4: $
+    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpa3k2sqlf
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Brickstone-Light.ttf
 build ../fonts/ttf/Brickstone-Light.ttf: fix $
-    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp4tv8q2p9
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpeqi28oi4
   operation = fix
   args =  --include-source-fixes
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp0teo_sep
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp0teo_sep: $
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp0p3xr91x
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp0p3xr91x: $
     buildTTF instance_ufos/Brickstone-Regular.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
@@ -238,18 +238,18 @@ build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp0teo_sep: $
       'DottedCircleFilter(pre=True)'
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpojnm71ib
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpojnm71ib: $
-    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp0teo_sep
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmps5sof649
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmps5sof649: $
+    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp0p3xr91x
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Brickstone-Regular.ttf
 build ../fonts/ttf/Brickstone-Regular.ttf: fix $
-    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpojnm71ib
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmps5sof649
   operation = fix
   args =  --include-source-fixes
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp89rd1uzc
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp89rd1uzc: $
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp87876o3j
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp87876o3j: $
     buildTTF instance_ufos/Brickstone-Medium.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
@@ -257,18 +257,18 @@ build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp89rd1uzc: $
       'DottedCircleFilter(pre=True)'
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp20g6qc_v
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp20g6qc_v: $
-    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp89rd1uzc
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpeuxr92yg
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpeuxr92yg: $
+    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp87876o3j
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Brickstone-Medium.ttf
 build ../fonts/ttf/Brickstone-Medium.ttf: fix $
-    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp20g6qc_v
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpeuxr92yg
   operation = fix
   args =  --include-source-fixes
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpr5p7baj1
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpr5p7baj1: $
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp5cmlh2n4
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp5cmlh2n4: $
     buildTTF instance_ufos/Brickstone-SemiBold.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
@@ -276,18 +276,18 @@ build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpr5p7baj1: $
       'DottedCircleFilter(pre=True)'
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpfechefuz
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpfechefuz: $
-    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpr5p7baj1
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpcb330w_g
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpcb330w_g: $
+    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp5cmlh2n4
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Brickstone-SemiBold.ttf
 build ../fonts/ttf/Brickstone-SemiBold.ttf: fix $
-    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpfechefuz
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpcb330w_g
   operation = fix
   args =  --include-source-fixes
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmponv4ahz8
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmponv4ahz8: $
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp1spz6bct
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp1spz6bct: $
     buildTTF instance_ufos/Brickstone-Bold.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
@@ -295,18 +295,18 @@ build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmponv4ahz8: $
       'DottedCircleFilter(pre=True)'
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp4r5nuzzr
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp4r5nuzzr: $
-    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmponv4ahz8
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp3jrz57l7
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp3jrz57l7: $
+    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp1spz6bct
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Brickstone-Bold.ttf
 build ../fonts/ttf/Brickstone-Bold.ttf: fix $
-    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp4r5nuzzr
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp3jrz57l7
   operation = fix
   args =  --include-source-fixes
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpjr13rcsq
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpjr13rcsq: $
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmped6xme4k
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmped6xme4k: $
     buildTTF instance_ufos/Brickstone-ExtraBold.ufo.json
   operation = buildTTF
   args = --filter ...  --filter FlattenComponentsFilter --filter $
@@ -314,18 +314,18 @@ build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpjr13rcsq: $
       'DottedCircleFilter(pre=True)'
   fontmake_type = -u
   fontmake_args =  --verbose WARNING 
-# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp42yxumw_
-build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp42yxumw_: $
-    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpjr13rcsq
+# Generating /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpsxgmuwnw
+build /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpsxgmuwnw: $
+    autohint /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmped6xme4k
   operation = autohint
   args = --fail-ok 
 # Generating ../fonts/ttf/Brickstone-ExtraBold.ttf
 build ../fonts/ttf/Brickstone-ExtraBold.ttf: fix $
-    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmp42yxumw_
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpsxgmuwnw
   operation = fix
   args =  --include-source-fixes
 default $
-    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpsvvd8c_v.buildStatstamp $
+    /var/folders/k0/tp0d5g7n5zdbf8sycx0wwjhh0000gn/T/tmpicv7fnhj.buildStatstamp $
     ../fonts/webfonts/Brickstone[wght].woff2 $
     ../fonts/webfonts/Brickstone-Thin.woff2 $
     ../fonts/webfonts/Brickstone-ExtraLight.woff2 $

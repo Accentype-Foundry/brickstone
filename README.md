@@ -16,8 +16,11 @@ Clarity at its core.
 
 ![illinois](img/illinois.png)
 
-## Font Styles
-(inspiration https://github.com/JetBrains/JetBrainsMono#font-styles)
+## Variable Font
+
+Brickstone is delivered primarily as a single-file **Variable Font** featuring a continuous **Weight (`wght`)** axis ranging from `100` to `800`.
+
+![Variable font weight progression showcase](img/var.png)
 
 
 
@@ -33,11 +36,6 @@ Sharp incisions and sudden breaks mirror a broad-nib pen on paper. An ongoing ex
 Brickstone is a modern sans serif inspired by broad-nib calligraphic mechanics. Starting as an experiment with reversed-angle strokes on a Pilot Parallel Pen, its raw calligraphic cuts were translated into a balanced, contemporary type system featuring a modern x-height and sharp, characterful details.
 
   ![Calligraphic angles and letterforms](img/calligraphics.png)
-## Variable Font
-
-Brickstone is delivered primarily as a single-file **Variable Font** featuring a continuous **Weight (`wght`)** axis ranging from `100` to `800`.
-
-![Variable font weight progression showcase](img/var.png)
 
 ---
 

@@ -7,7 +7,7 @@ An expressive font that's comfortable read:  Brickstone was designed for everyon
 
 
 
-## Basic characterset
+## Basic character set
 
 ![Caracterset](img/characterset.png)
 

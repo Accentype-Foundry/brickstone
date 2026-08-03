@@ -1,6 +1,6 @@
 ![](img/featured-brickstone.png)
 
-**Brickstone** is a humanist sans-serif variable typeface, ranging from Thin to Extra Bold. It's a practical, slightly unconventional typeface, equally comfortable in print and on screen, in display sizes and running text. 
+**Brickstone** is a humanist sans-serif variable typeface, ranging from Thin to Extra Bold. It's a practical, distinctive typeface, equally comfortable in print and on screen, in display sizes and running text. 
 
 With 8 weights, from thin elegance to extra bold confidence, it moves smoothly across the range without losing its expressiveness. A font that's comfortable to read and, at the same time, deeply personal. This humanist sans serif was designed for everyone, designers and users alike, with accessibility at its center. It suits magazines, websites, unique visual identities, and marketing purposes equally well.
 
@@ -55,16 +55,21 @@ Includes a comprehensive set of punctuation, currency marks, mathematical operat
 
 ---
 
-## Building from Source
+## Building from source
 
-If you want to build the fonts yourself, this project uses standard Google Fonts toolchains and a `Makefile`.
+> **Note:** To build from source, you will need **Python 3.9.5 or higher** and [Glyphs](https://glyphsapp.com/) to open the source files in the `sources/` folder.
 
-### Prerequisites
+To build the static `.ttf`, `.otf`, `.woff2`, and variable `.ttf` files:
 
-Building requires **Python 3.9+**. Make sure your dependencies are installed:
-
+1. Install the required tools:
 
 `pip install gftools fonttools[woff] fontbakery`
+
+2. Run the build process:
+
+`gftools builder sources/config.yaml`
+
+  After the process completes, all generated font files will be in the fonts/ folder.
 
 ## License
 

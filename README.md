@@ -33,7 +33,7 @@ Sharp incisions and sudden breaks mirror a broad-nib pen on paper. An ongoing ex
 
 
 **Origins**  
-Brickstone is a modern sans serif inspired by broad-nib calligraphic mechanics. Starting as an experiment with reversed-angle strokes on a Pilot Parallel Pen, its raw calligraphic cuts were translated into a balanced, contemporary type system featuring a modern x-height and sharp, characterful details.
+Brickstone is a modern sans serif inspired by broad-nib calligraphic mechanics. Starting as an experiment with reversed-angle strokes on a Pilot Parallel Pen, its raw calligraphic cuts were translated into a functional type system.
 
   ![Calligraphic angles and letterforms](img/calligraphics.png)
 

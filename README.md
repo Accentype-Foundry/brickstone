@@ -63,7 +63,7 @@ To build the static `.ttf`, `.otf`, `.woff2`, and variable `.ttf` files:
 
 1. Install the required tools:
 
-`pip install gftools fonttools[woff] fontbakery`
+`pip install gftools`
 
 2. Run the build process:
 

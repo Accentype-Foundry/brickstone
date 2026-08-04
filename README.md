@@ -18,7 +18,7 @@ Clarity at its core.
 
 ## Variable Font
 
-Brickstone is a **Variable Font** featuring a continuous **Weight (`wght`)** axis ranging from `100` to `800`.
+Brickstone is a Vvriable font featuring a continuous weight (`wght`) axis ranging from `100` to `800`.
 
 ![Variable font weight progression showcase](img/var.png)
 

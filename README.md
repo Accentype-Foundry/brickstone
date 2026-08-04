@@ -1,6 +1,6 @@
 ![](img/featured-brickstone.png)
 
-**Brickstone** is a humanist sans-serif variable typeface, ranging from Thin to ExtraBold. It's a practical, distinctive typeface, equally comfortable in print and on screen, in display sizes and running text. 
+**Brickstone** is a humanist sans-serif variable typeface, ranging from Thin to ExtraBold. It's a practical, distinctive typeface, equally effective in print and on screen, in display sizes and running text. 
 
 An expressive font that's comfortable to read: Brickstone was designed for everyone, with accessibility at its center, and human touch all around. Its distinctive characters are well suited for magazines, websites, unique visual identities, and marketing purposes equally well.
 
@@ -18,7 +18,7 @@ Clarity at its core.
 
 ## Variable Font
 
-Brickstone is a Vvriable font featuring a continuous weight (`wght`) axis ranging from `100` to `800`.
+Brickstone is a variable font featuring a continuous weight (`wght`) axis ranging from `100` to `800`.
 
 ![Variable font weight progression showcase](img/var.png)
 

@@ -1,23 +1,23 @@
-![](img/featured-brickstone.png)
+![](article/featured-brickstone.png)
 
-Brickstone is a humanist sans-serif variable typeface ranging from Thin to ExtraBold. It is a practical, versatile font suited for both print and screen. Its distinctive characters are equally effective in display sizes and body text, making it a great choice for branding, visual identities, magazines, book covers, websites, and mobile apps.
-Expressive yet comfortable to read, Brickstone was designed for everyone: with accessibility at its center and a human touch all around.
+
+Brickstone is a variable, humanist, sans-serif font, with weights ranging from Thin to ExtraBold. Drawing inspiration from calligraphy and stone carving, the font seamlessly blends fluid lines with sharp angles. It is crisp and expressive in display settings while remaining highly legible in continuous text. Used in print or on screen, Brickstone performs well in all application environments, making it a practical and versatile choice.
 
 
 ## Latin character set
 
-![Caracterset](img/characterset.png)
+![Caracterset](article/characterset.png)
 
 
 Clarity at its core.
 
-![illinois](img/illinois.png)
+![illinois](article/illinois.png)
 
 ## Variable Font
 
 Brickstone is a variable font featuring a continuous weight (`wght`) axis ranging from `100` to `800`.
 
-![Variable font weight progression showcase](img/var.png)
+![Variable font weight progression showcase](article/var.png)
 
 
 
@@ -26,13 +26,13 @@ Brickstone is a variable font featuring a continuous weight (`wght`) axis rangin
 Sharp incisions and sudden breaks mirror a broad-nib pen on paper. An ongoing experiment in form.</p>
   </div>
 
-![brace](img/em-brace.png)
+![brace](article/em-brace.png)
 
 
 **Origins**  
 Brickstone is a modern sans serif inspired by broad-nib calligraphic mechanics. Starting as an experiment with reversed-angle strokes on a Pilot Parallel Pen, its raw calligraphic cuts were translated into a functional type system.
 
-  ![Calligraphic angles and letterforms](img/calligraphics.png)
+  ![Calligraphic angles and letterforms](article/calligraphics.png)
 
 ---
 
@@ -40,7 +40,7 @@ Brickstone is a modern sans serif inspired by broad-nib calligraphic mechanics. 
 
 Brickstone provides broad linguistic coverage, supporting European Latin-based languages across Western, Central, Eastern, Northern, and Southern Europe.
 
-![Text body rendering in multiple languages](img/text.png)
+![Text body rendering in multiple languages](article/text.png)
 
 ---
 
@@ -48,7 +48,7 @@ Brickstone provides broad linguistic coverage, supporting European Latin-based l
 
 Includes a comprehensive set of punctuation, currency marks, mathematical operators, geometric shapes, and symbols.
 
-![Overview of supported punctuation, currency, and mathematical symbols](img/symbols.png)
+![Overview of supported punctuation, currency, and mathematical symbols](article/symbols.png)
 
 ---
 

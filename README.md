@@ -1,7 +1,7 @@
 ![](article/featured-brickstone.png)
 
 
-Brickstone is a variable, humanist, sans-serif font, with weights ranging from Thin to ExtraBold. Drawing inspiration from calligraphy and stone carving, the font seamlessly blends fluid lines with sharp angles. It is crisp and expressive in display settings while remaining highly legible in continuous text. Used in print or on screen, Brickstone performs well in all application environments, making it a practical and versatile choice.
+Brickstone is a variable, humanist, sans-serif font, with weights ranging from Thin to ExtraBold. Drawing inspiration from calligraphy and stone carving, the font combines fluid lines with sharp angles. It is crisp and expressive in display settings while remaining highly legible in continuous text. Used in print or on screen, Brickstone performs well in all application environments, making it a practical and versatile choice.
 
 
 ## Latin character set
